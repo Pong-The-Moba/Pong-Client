@@ -34,7 +34,7 @@ public abstract class PongSound extends PongPacket {
     @Override
     public void setup() {
         try {
-            sound = new Sound(Registry.SOUND_PATH + getAudioPath());
+            sound = new Sound(Registry.getResources(getAudioPath()));
         } catch (SlickException e) {
             e.printStackTrace();
         }

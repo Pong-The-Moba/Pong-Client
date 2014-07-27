@@ -26,8 +26,11 @@ public class Registry {
      * * * * * * * * ** * * * * * * Packets * * * * * * * * * * * * * * * **
      * *********************************************************************
      */
-    //Sounds
-    final public static String SOUND_PATH = "pong/src/main/resources/";
+    //Resources
+    final public static String RESOURCES_PATH = "Link/Pong/src/main/resources/";
+    public static String getResources(String filename) {
+        return RESOURCES_PATH + filename;
+    }
     //Registered Packets
     public static final List<Class<? extends PongPacket>> classes = new ArrayList<Class<? extends PongPacket>>() {{
         add(Ball.class);

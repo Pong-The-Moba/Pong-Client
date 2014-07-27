@@ -5,6 +5,8 @@ import org.newdawn.slick.SpriteSheet;
 
 import java.util.HashMap;
 
+import utils.Registry;
+
 /**
  * Created by rbooth on 7/24/14.
  */
@@ -15,8 +17,8 @@ public class SpriteSheetMap extends HashMap<Byte, SpriteSheet> {
         SpriteSheet redPaddle = null;
         SpriteSheet bluePaddle = null;
         try {
-            redPaddle = new SpriteSheet("pong/src/main/resources/redPaddleSprite.jpg", 20, 200);
-            bluePaddle = new SpriteSheet("pong/src/main/resources/bluePaddleSprite.jpg", 20, 200);
+            redPaddle = new SpriteSheet(Registry.getResources("redPaddleSprite.jpg"), 20, 200);
+            bluePaddle = new SpriteSheet(Registry.getResources("bluePaddleSprite.jpg"), 20, 200);
         } catch (SlickException e) {
             e.printStackTrace();
         }
