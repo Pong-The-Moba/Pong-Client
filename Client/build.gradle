@@ -3,7 +3,7 @@ apply plugin: 'maven'
 apply plugin: 'executable-jar'
 
 // This is the class that starts your application
-mainClass = 'client.PongDisplay'
+mainClass = 'client.ClientStateBasedGame'
 sourceCompatibility = 1.7
 version = '1.0'
 
@@ -28,7 +28,7 @@ jar {
     baseName = 'pong-the-moba-client'
     version = '0.1.0'
     manifest {
-        attributes 'Main-Class': 'client.PongDisplay'
+        attributes 'Main-Class': 'client.ClientStateBasedGame'
     }
 }
 

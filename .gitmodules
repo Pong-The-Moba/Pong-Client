@@ -1,3 +1,6 @@
 [submodule "Link"]
 	path = Link
 	url = https://github.com/Pong-The-Moba/Pong-Link.git
+[submodule "jars"]
+	path = jars
+	url = https://github.com/Pong-The-Moba/pong-the-moba-jars.git
