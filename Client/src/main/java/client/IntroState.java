@@ -90,7 +90,7 @@ public class IntroState extends BasicGameState {
         }
         if (countdown == 0) {
             if (ipEntryField.getText().equals("")) {
-                boss.setIPAndEnterGame("192.168.1.72"); //FIXME - shh don't tell JT
+                boss.setIPAndEnterGame("192.168.1.67"); //FIXME - shh don't tell JT
             } else {
                 boss.setIPAndEnterGame(ipEntryField.getText());
             }
