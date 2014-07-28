@@ -55,6 +55,14 @@ public class IntroState extends BasicGameState {
         }
     }
 
+    private String getIP() {
+        if (ipEntryField.getText().length() > 0) {
+            return ipEntryField.getText();
+        } else {
+            return "192.168.1.88";
+        }
+    }
+
     @Override
     public void init(GameContainer container, StateBasedGame game) throws SlickException {
 
