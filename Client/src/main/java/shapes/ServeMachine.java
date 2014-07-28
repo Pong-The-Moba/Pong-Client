@@ -29,7 +29,6 @@ public class ServeMachine extends PongPacket {
 
         float xDiff = (float) Math.cos(rotation)*Settings.serveMachineLineLength;
         float yDiff = (float) Math.sin(rotation)*Settings.serveMachineLineLength;
-        System.out.println("serveMachine at " + xPos + ", " + yPos);
         graphics.drawGradientLine(xPos-xDiff, yPos-yDiff, new Color(255,0,0), xPos+xDiff, yPos+yDiff, new Color(0,0,255));
 
     }

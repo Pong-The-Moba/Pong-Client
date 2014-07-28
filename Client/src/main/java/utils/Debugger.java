@@ -3,8 +3,6 @@ package utils;
 import java.util.Arrays;
 import java.util.List;
 
-import client.PongDisplayState;
-
 /**
  * Created by chris on 6/28/14.
  * sihrc @ Github
@@ -21,7 +19,7 @@ public class Debugger extends pongutils.Debugger {
      * *
      */
     public final static List<String> enabled = Arrays.asList(
-        PongDisplayState.class.getSimpleName()
+        //PongDisplayState.class.getSimpleName()
     );
 
 
