@@ -16,7 +16,7 @@ import java.util.Map;
 import serialization.Bytes;
 import serialize.PongPacket;
 import utils.Debugger;
-import utils.Registry;
+import resources.Registry;
 
 public class PongDisplayState extends BasicGameState {
     private static Debugger debbie = new Debugger(PongDisplayState.class.getSimpleName());

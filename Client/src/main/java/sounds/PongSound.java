@@ -10,7 +10,7 @@ import java.util.List;
 import serialization.Packet;
 import serialization.Pattern;
 import serialize.PongPacket;
-import utils.Registry;
+import resources.Registry;
 
 /**
  * Created by rbooth on 7/10/14.

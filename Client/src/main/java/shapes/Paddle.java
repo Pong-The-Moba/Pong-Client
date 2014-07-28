@@ -13,7 +13,7 @@ import serialization.Packet;
 import serialization.Pattern;
 import serialize.PongPacket;
 import utils.Debugger;
-import utils.Registry;
+import resources.Registry;
 
 public class Paddle extends PongPacket {
     Debugger debbie = new Debugger(Paddle.class.getSimpleName());

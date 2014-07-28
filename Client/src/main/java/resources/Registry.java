@@ -1,7 +1,8 @@
-package utils;
+package resources;
 
 import org.newdawn.slick.SpriteSheet;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -27,9 +28,8 @@ public class Registry {
      * *********************************************************************
      */
     //Resources
-    final public static String RESOURCES_PATH = "Link/Pong/src/main/resources/";
-    public static String getResources(String filename) {
-        return RESOURCES_PATH + filename;
+    public static URL getResources(String filename) {
+        return Registry.class.getResource(filename);
     }
     //Registered Packets
     public static final List<Class<? extends PongPacket>> classes = new ArrayList<Class<? extends PongPacket>>() {{
