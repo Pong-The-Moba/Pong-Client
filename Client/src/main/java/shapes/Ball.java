@@ -1,7 +1,9 @@
 package shapes;
 
+import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.geom.Circle;
+import org.newdawn.slick.geom.Rectangle;
 import org.newdawn.slick.geom.Transform;
 
 import java.util.ArrayList;
@@ -38,7 +40,10 @@ public class Ball extends PongPacket {
         circle.setCenterX(Settings.m2p((Float) data.get(1).data));
         circle.setCenterY(Settings.m2p((Float) data.get(2).data));
         circle.setRadius(Settings.m2p((Float) data.get(3).data));
-        circle.transform(Transform.createRotateTransform((Float) data.get(0).data));
+        Rectangle rect = new Rectangle(circle.getCenterX(), circle.getCenterY(), circle.radius, circle.radius);
+        circle.subtract(rect);
+        Transform rotation = Transform.createRotateTransform((Float) data.get(0).data);
+        circle.transform(rotation);
         graphics.fill(circle);
     }
 
