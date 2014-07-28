@@ -1,5 +1,6 @@
 package client;
 
+import org.lwjgl.input.Keyboard;
 import org.newdawn.slick.*;
 import org.newdawn.slick.Color;
 import org.newdawn.slick.Graphics;
@@ -42,6 +43,15 @@ public class IntroState extends BasicGameState {
             done=true;
 
             System.out.println("clicked on GO");
+        }
+    }
+
+    @Override
+    public void keyPressed(int key, char c) {
+        if (key == Keyboard.KEY_RETURN) {
+            boss.setIPAndEnterGame(ipEntryField.getText());
+        } else {
+            super.keyPressed(key, c);
         }
     }
 
