@@ -10,7 +10,7 @@ import java.util.List;
 import serialization.Packet;
 import serialization.Pattern;
 import serialize.PongPacket;
-import resources.Registry;
+import utils.Registry;
 
 /**
  * Created by rbooth on 7/10/14.
@@ -27,7 +27,6 @@ public abstract class PongSound extends PongPacket {
 
     @Override
     public void extractData(List<Packet> data, Graphics graphics) {
-        System.out.println("Playing");
         sound.play(1f, (Float) data.get(0).data);
     }
 

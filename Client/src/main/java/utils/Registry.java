@@ -1,4 +1,4 @@
-package resources;
+package utils;
 
 import org.newdawn.slick.SpriteSheet;
 

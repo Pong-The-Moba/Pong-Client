@@ -4,6 +4,7 @@ import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.SlickException;
 import org.newdawn.slick.state.StateBasedGame;
+
 import utils.Settings;
 
 /**
@@ -39,7 +40,6 @@ public class ClientStateBasedGame extends StateBasedGame {
     }
 
     public static void main(String[] args) {
-
         ClientStateBasedGame game = new ClientStateBasedGame("Pong Client");
         game.enterState(1); // intro
 

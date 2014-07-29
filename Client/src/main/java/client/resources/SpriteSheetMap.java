@@ -6,7 +6,7 @@ import org.newdawn.slick.SpriteSheet;
 import java.io.IOException;
 import java.util.HashMap;
 
-import resources.Registry;
+import utils.Registry;
 
 /**
  * Created by rbooth on 7/24/14.
